@@ -1,0 +1,262 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\section{Grading Contract}\label{grading-contract}
+
+January 12 2023
+
+\section{Contract Grades -- ``A''
+Contract}\label{contract-grades-a-contract}
+
+I, Tukey Cat, agree to :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Earn ``Satisfactory'' on 11 self-paced lab assignments on the schedule
+  specified below.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Satisfactory defined:
+  \item
+    I have attempted all steps of the assignment. If unable to complete
+    steps due to unresolved questions, I have asked questions in Github
+    FAQs or zoom help session, or I have Googled the issue and shown
+    effort to resolve questions;
+  \item
+    I have checked that forked files, repos, or projects appear on my
+    Github account and are accessible;
+  \item
+    I feel like I have spent an adequate amount of time and energy on
+    assignments;
+  \item
+    My presentation is professional, engaging, and accessible.
+  \end{itemize}
+\item
+  Produce at least 10 ``Satisfactory'' portfolio pieces on the schedule
+  specified below.
+\item
+  Complete a ``Satisfactory'' presentation based on some portfolio
+  pieces. 10 minutes total in length.
+\end{enumerate}
+
+\subsection{SCHEDULE}\label{schedule}
+
+Note: This is an example schedule. You are welcomed and encouraged to
+rearrange these labs and events to fit your needs.
+
+\begin{itemize}
+\item[$\square$]
+  Module 01, 01/09 - 01/13 : What is Data Science and Meet the Toolkit
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 1 by Friday: 01/13
+  \end{itemize}
+\item[$\square$]
+  Module 02, 01/16 - 01/20 : Data and Visualization
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 2 by Friday: 01/20
+  \item
+    Propose your contract to Mason by Friday: 01/20
+  \end{itemize}
+\item[$\square$]
+  Module 03, 01/23 - 01/27 : Grammar of data wrangling
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 3 by Friday: 01/27
+  \item
+    Finish portfolio piece 1 by Friday: 01/27
+  \end{itemize}
+\item[$\square$]
+  Module 04, 01/30 - 02/03 : Data types and Data Transformations
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 4 by Friday: 02/03
+  \end{itemize}
+\item[$\square$]
+  Module 05, 02/06 - 02/10 : Tips for effective data visualization
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 5 by Friday: 02/10
+  \item
+    Finish portfolio piece 2 by Friday: 02/10
+  \end{itemize}
+\item[$\square$]
+  Module 06, 02/13 - 02/17 : Scientific studies and confounding
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 6 by Friday: 02/17
+  \item
+    Schedule a check-in with Mason by Friday: 02/17
+  \end{itemize}
+\item[$\square$]
+  Module 07, 02/20 - 02/24 : Web scraping
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 7 by Friday: 02/24
+  \item
+    Finish portfolio piece 3 by Friday: 02/24
+  \end{itemize}
+\item[$\square$]
+  Module 08, 02/27 - 03/03 : Functions
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 8 by Friday: 03/03
+  \end{itemize}
+\item[$\square$]
+  Module 09, 03/06 - 03/10 : Data and Ethics
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 9 by Friday: 03/10
+  \item
+    Finish portfolio piece 4 by Friday: 03/10
+  \end{itemize}
+\item[$\square$]
+  Module 10, 03/13 - 03/17 : Fitting and interpreting models
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 10 by Friday: 03/17
+  \end{itemize}
+\item[$\square$]
+  Module 11, 03/20 - 03/24 : Prediction and overfitting
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish Lab 11 by Friday: 03/24
+  \item
+    Finish portfolio piece 5 by Friday: 03/24
+  \end{itemize}
+\item[$\square$]
+  Module 12, 03/27 - 03/31 : Cross validation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish portfolio piece 6 by Friday: 03/31
+  \end{itemize}
+\item[$\square$]
+  Module 13, 04/03 - 04/07 : Quantifying uncertainty
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish portfolio pieces 7 and 8 by Friday: 04/07
+  \end{itemize}
+\item[$\square$]
+  Module 14, 04/10 - 04/14 : Interactive web apps
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish portfolio piece 9 by Friday: 04/14
+  \end{itemize}
+\item[$\square$]
+  Module 15, 04/17 - 04/21 : Special Topics
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finish portfolio piece 10 by Friday: 04/21
+  \end{itemize}
+\item[$\square$]
+  Portfolio completion and end-of-semester presentation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Due on Friday: 04/21
+  \end{itemize}
+\end{itemize}
+
+\end{document}
